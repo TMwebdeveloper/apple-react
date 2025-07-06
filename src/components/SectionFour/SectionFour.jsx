@@ -1,53 +1,46 @@
-import React from 'react'
+import React from "react";
+import iphone11 from "../../assets/images/iphone11.png"; // Use your real image path
 
 function SectionFour() {
   return (
-    <>
-      <section className="fourth-heghlight-wrapper">
-        <div className="container-fluid">
-          <div className="row">
-            <div className="left-side-wrapper col-sm-12 col-md-6">
-              <div className="left-side-container">
-                <div className="title-wraper">iPhone 11</div>
-                <div className="description-wraper">
-                  Just the right amount of everything.
-                </div>
-                <div className="price-wrapper">
-                  From $18.70/mo. or $499 with trade‑in.<sup>1</sup>
-                </div>
+    <section className="py-5 bg-white">
+      <div className="container">
+        <div className="row align-items-center flex-md-row-reverse">
+          {/* 📱 Image with bold text underneath */}
+          <div className="col-md-6 text-center mb-4 mb-md-0">
+            <img
+              src={iphone11}
+              alt="iPhone 11"
+              className="img-fluid"
+              style={{
+                maxHeight: "450px",
+                width: "100%",
+                objectFit: "contain",
+              }}
+            />
+            <p className="fw-bold mt-3 fs-5">IPhone 11</p>
+          </div>
 
-                <div className="links-wrapper">
-                  <ul>
-                    <li>
-                      <a href="">Learn more</a>
-                    </li>
-                    <li>
-                      <a href="">Apply now</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div className="right-side-wrapper col-sm-12 col-md-6">
-              <div className="right-side-container">
-                <div className="title-wraper white">
-                  Get the latest CDC response to COVID-19.
-                </div>
-
-                <div className="links-wrapper white">
-                  <ul>
-                    <li>
-                      <a href="">Watch the PSA</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+          {/* 📝 Text */}
+          <div className="col-md-6">
+            <h2 className="fw-bold bold">iPhone 11</h2>
+            <p className="mb-2">Just the right amount of everything.</p>
+            <p className="fw-semibold text-secondary">
+              From $18.70/mo. or $499 with trade‑in.
+            </p>
+            <div className="d-flex gap-3">
+              <a href="#" className="btn btn-dark">
+                Learn More
+              </a>
+              <a href="#" className="btn btn-outline-dark">
+                Apply Now
+              </a>
             </div>
           </div>
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 }
 
-export default SectionFour
+export default SectionFour;

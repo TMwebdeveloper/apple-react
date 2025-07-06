@@ -14,6 +14,7 @@ function Alert() {
 			</div>
 		</div>
 	</section>
+	
     </>
   )
 }

@@ -1,34 +1,41 @@
-import React from 'react'
+import React from "react";
+import iphone11pro from "../../assets/images/iphone11pro.png"; // Use your real image path
 
 function SectionThree() {
   return (
-    <>
-      <section className="third-hightlight-wrapper">
-        <div className="container">
-          <div className="title-wraper bold">iPhone 11 Pro</div>
-
-          <div className="description-wrapper">
-            Pro cameras. Pro display. Pro performance.
+    <section className="py-5 bg-light">
+      <div className="container">
+        <div className="row align-items-center">
+          {/* 📱 Image */}
+          <div className="col-md-6 text-center mb-4 mb-md-0">
+            <img
+              src={iphone11pro}
+              alt="iPhone 11 Pro"
+              className="img-fluid"
+              style={{ maxHeight: "350px" }}
+            />
           </div>
 
-          <div className="price-wrapper">
-            From $24.95/mo. or $599 with trade‑in.
-          </div>
-
-          <div className="links-wrapper">
-            <ul>
-              <li>
-                <a href="">Learn more</a>
-              </li>
-              <li>
-                <a href="">Buy</a>
-              </li>
-            </ul>
+          {/* 📝 Text */}
+          <div className="col-md-6">
+            <h2 className="fw-bold">iPhone 11 Pro</h2>
+            <p className="mb-2">Pro cameras. Pro display. Pro performance.</p>
+            <p className="fw-semibold text-secondary">
+              From $24.95/mo. or $599 with trade‑in.
+            </p>
+            <div className="d-flex gap-3">
+              <a href="#" className="btn btn-dark">
+                Learn More
+              </a>
+              <a href="#" className="btn btn-outline-dark">
+                Buy
+              </a>
+            </div>
           </div>
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 }
 
-export default SectionThree
+export default SectionThree;
